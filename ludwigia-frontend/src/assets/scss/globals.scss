@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;600;700&family=Signika:wght@400;600;700&display=swap');
+:root {
+    --notosan-font: 'Noto Sans', sans-serif;
+    --signika-font: 'Signika', sans-serif;
+    --poppins-font: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    & ul {
+        list-style-type: disc;
+    }
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    & input {
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &::-ms-reveal {
+            display: none;
+        }
+
+        &::-ms-clear {
+            display: none;
+        }
+    } 
+
+    & .swal2-container {
+        z-index: 9999;
+    }
+}
+
+li ul, li ol {
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+ol li, ul li {
+    padding-left: 4px;
+}
+
+.flex-center {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.custom-scrollbar {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 16px;
+        background-color: transparent;
+    }
+    
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: #d4d4d4bf;
+    }
+}
+
+.custom-scrollbar-visible {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: rgba(212, 212, 212, 0.25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 16px;
+        background-color: rgba(212, 212, 212, 0.75);
+    }
+}
+
+.highlighter {
+    color: #009688;
+    font-weight: 700;
+    background: none;
+}
+
+
+.text-eclipse {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+    &.one-line {
+        -webkit-line-clamp: 1;
+    }
+
+    &.two-line {
+        -webkit-line-clamp: 2;
+    }
+}
+

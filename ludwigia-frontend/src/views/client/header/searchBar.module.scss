@@ -1,0 +1,21 @@
+.search-container {
+    position: relative;
+  
+    > *:last-child:not(.search-input) {
+        position: absolute;
+        width: 100%;
+    }
+  
+    .search-result-wrapper {
+        border-radius: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        overflow-x: hidden;
+    
+        & .search-result {
+            overflow-y: scroll;
+            max-height: 50vh;
+            padding: 0;
+        }
+    }
+}
